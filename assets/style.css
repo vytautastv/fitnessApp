@@ -1,8 +1,29 @@
 .container {
-    position: absolute;
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    border-radius: 10px;
-    color: black
+    position: relative;
+    justify-content:center;
+    align-items: flex-start;
+    background: linear-gradient(90deg, rgb(61 88 107) 0%, rgb(88 111 136) 54%, rgb(61 88 107) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px;
+    width: 30% !important;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+
 } 
 
+.header {
+    font-size: 26px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    background-color: black;
+
+}
