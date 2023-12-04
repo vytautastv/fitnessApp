@@ -1,4 +1,4 @@
-async function bmiCalculator() {
+async function bmiCalulator() {
     const url = 'https://bmi-calculator6.p.rapidapi.com/bmi?height=184&weight=86&system=metric';
     const options = {
         method: 'GET',
@@ -17,7 +17,21 @@ async function bmiCalculator() {
     }
 }
 
-bmiCalculator()
+bmiCalulator()
+//var muscle = "chest";
+//$.ajax({
+ // method: "GET",
+ // url: "https://api.api-ninjas.com/v1/exercises?muscle=" + muscle,
+ // headers: { "X-Api-Key": "ZsgK8spWOxxkEn6A70+Svg==xtHt8idt25vLlexH" },
+ // contentType: "application/json",
+ // success: function (result) {
+   //console.log(result);
+   // workoutPlanner()
+//},
+  //error: function ajaxError(jqXHR) {
+    //console.error("Error: ", jqXHR.responseText);
+  //},
+//});
 
 async function workoutPlanner() {
     const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/chest?limit=10';
