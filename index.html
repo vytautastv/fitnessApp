@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    
 
     <title>Fitness App</title>
 </head>
@@ -15,23 +18,45 @@
             <h2 class="header"> BMI Calculator</h2>
             <p>Please enter your height and weight to calculate your BMI</p>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="weight">
+                <input type="text" id="weightInput" class="form-control" id="floatingInput" placeholder="weight">
                 <label for="floatingInput">Weight (Kg)</label>
             </div>
             <div class="form-floating mb-5">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Height">
+                <input type="text" id="heightInput" class="form-control" id="floatingInput" placeholder="Height">
                 <label for="floatingPassword">Height (cm)</label>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto mb-3">
                 <button type="button" class="btn btn-outline-light">Calculate</button>
+                <button type="button" id="clearBtn" class="btn btn-outline-light">Clear</button>
             </div>
-            <p id="outout"></p>
+            <p id="result"></p>
 
         </div>
     </section>
 
-
-
+    <footer class=“text-center text-lg-start”>
+        <div class=“container d-flex justify-content-center py-5”>
+        <button type=“button” class=“btn btn-primary btn-lg btn-floating mx-2”>
+            <i class=“fab fa-facebook-f”></i>
+        </button>
+        <button type=“button” class=“btn btn-primary btn-lg btn-floating mx-2”>
+            <i class=“fab fa-youtube”></i>
+        </button>
+        <button type=“button” class=“btn btn-primary btn-lg btn-floating mx-2”>
+            <i class=“fab fa-instagram”></i>
+        </button>
+        <button type=“button” class=“btn btn-primary btn-lg btn-floating mx-2” >
+            <i class=“fab fa-twitter”></i>
+        </button>
+        </div>
+        <!-- Copyright -->
+        <div class=“text-center text-white p-3" style=“background-color: rgba(0, 0, 0, 0.2);“>
+        © 2020 Copyright:
+        <a class=“text-white” href=“https://mdbootstrap.com/”>MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
