@@ -53,3 +53,26 @@ async function workoutPlanner() {
 }
 workoutPlanner()
 
+// Code for storing the users inputs (email and name) to local storage
+function saveUserData() {
+    // Get user inputs
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+
+    // Create an object to store user data
+    var userData = {
+      name: name,
+      email: email
+    };
+
+    // Convert the object to a JSON string
+    var userDataJSON = JSON.stringify(userData);
+
+    // Store the JSON string in local storage
+    localStorage.setItem('userData', userDataJSON);
+
+    // Close the modal (if needed)
+    var signupModal = new bootstrap.Modal(document.getElementById('signupModal'));
+    signupModal.hide();
+  }
+ 
