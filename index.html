@@ -11,54 +11,52 @@
 </head>
 <body>
 
-   <!--Header/Navbar-->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">VIMQ</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<!--Header/Navbar-->
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">VIMQ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BMI Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#signupModal">
+                  Sign Up
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav" >
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">BMI Calculator</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Exercises</a>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
-                        Sign Up
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Jumbotron -->
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">VIMQ Fitness</h1>
-          <p class="col-md-8 fs-4">Elevate your fitness journey with VIMQ Fitness the ultimate destination for personalised workouts and instant BMI insights. Unleash your potential, transform your body, and redefine what's possible in just a few taps!</p>
-          <button class="btn btn-primary btn-lg" type="button">Sign Up</button>
+            </li>
+          </ul>
         </div>
       </div>
+  </nav>
+</header>
 
+    <!-- Jumbotron -->
+    <div class="p-5 mb-4 bg-body-tertiary jumbotron">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">VIMQ Fitness</h1>
+        <p class="col-md-8 fs-4">Elevate your fitness journey with VIMQ Fitness the ultimate destination for personalised workouts and instant BMI insights. Unleash your potential, transform your body, and redefine what's possible in just a few taps!</p>
+      </div>
+    </div>
 
     <!-- BMI Calculator --> 
-    <section>
-        <div class="BMIcontainer">
+    <section class="d-flex justify-content-center align-items-center vh-50">
+        <div class="bmiContainer">
             <h2 class="header"> BMI Calculator</h2>
-            <p>Please enter your height and weight to calculate your BMI</p>
+            <p id="bmiText">Please enter your height and weight to calculate your BMI</p>
             <div class="form-floating mb-3">
                 <input type="text" id="weightInput" class="form-control" id="floatingInput" placeholder="weight">
                 <label for="floatingInput">Weight (Kg)</label>
@@ -212,6 +210,24 @@
       </div>
     </div>
   </div>
+<!--Footer-->
+<div class="container" >
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2023 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li><img src="./assets/icons8-twitter-100.png" alt=""></li>
+      <li><img src="./assets/icons8-instagram-100.png" alt=""></li>
+      <li><img src="./assets/icons8-facebook-100.png" alt=""></li>
+    </ul>
+  </footer>
+</div>
+
     <!-- Modal -->
     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog">
