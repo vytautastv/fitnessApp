@@ -101,18 +101,18 @@ $(document).ready(async function () {
     signupModal.hide();
   }
 
-  const apiKey = "ec389cb394msh147e651554bd4f5p183964jsn80b6d95991b7"; //API key
-  const bodyPartUrls = [
+  var apiKey = "ec389cb394msh147e651554bd4f5p183964jsn80b6d95991b7"; //API key
+  var bodyPartUrls = [
     "https://exercisedb.p.rapidapi.com/exercises/bodyPart/chest?limit=10",
     "https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10",
     "https://exercisedb.p.rapidapi.com/exercises/bodyPart/lower%20legs?limit=10",
     "https://exercisedb.p.rapidapi.com/exercises/bodyPart/waist?limit=10",
   ];
 
-  // Function to fetch exercises for a specific body part
+  // Create a function to fetch exercises for a specific body part
 
-  const fetchExercises = async (url) => {
-    const options = {
+  var fetchExercises = async function (bodyPartUrls) {
+    var options = {
       method: "GET",
       headers: {
         "X-RapidAPI-Key": apiKey,
@@ -121,32 +121,33 @@ $(document).ready(async function () {
     };
 
     try {
-      const response = await fetch(url, options);
-      const data = await response.json();
+      var response = await fetch(bodyPartUrls, options);
+      var data = await response.json();
       return data;
     } catch (error) {
       console.error("Error fetching exercises:", error);
     }
-  }; // Function to set the exercise data in the corresponding card
+  };
 
-  const setCardData = (cardIndex, exerciseData) => {
-    const cardTitleElement =
-      document.querySelectorAll(".card-title")[cardIndex];
-    const imgElement = document.querySelectorAll(".card-img-top")[cardIndex];
-    const moreInfoLink = document.querySelectorAll(".btn")[cardIndex];
+  // Create a function to set the exercise data in the corresponding card
+
+  var setCardData = function (cardIndex, exerciseData) {
+    var cardTitleElement = document.querySelectorAll(".card-title")[cardIndex];
+    var imgElement = document.querySelectorAll(".card-img-top")[cardIndex];
+    var moreInfoLink = document.querySelectorAll(".btn")[cardIndex];
 
     cardTitleElement.textContent = exerciseData.name;
     imgElement.src = exerciseData.gifUrl;
-    moreInfoLink.href = exerciseData.moreInfoUrl; // Adjust this based on your API response
-  }; // Define card indices
+  };
 
-  const cardIndices = [0, 1, 2]; // Fetch exercises and set data for each body part
+  // Fetch the exercises for each body part using for loop
+  var cardIndices = [0, 1, 2];
 
   for (let i = 0; i < bodyPartUrls.length; i++) {
-    const exercises = await fetchExercises(bodyPartUrls[i]);
-    const exercisesToShow = exercises.slice(0, cardIndices.length);
+    var exercises = await fetchExercises(bodyPartUrls[i]);
+    var exercisesToShow = exercises.slice(0, cardIndices.length);
 
-    exercisesToShow.forEach((exerciseData, index) => {
+    exercisesToShow.forEach(function (exerciseData, index) {
       setCardData(cardIndices[index] + i * cardIndices.length, exerciseData);
     });
   }
