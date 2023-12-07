@@ -1,6 +1,6 @@
 # VIMQ Fitness App
 
-![VIMQFitness](./assets/images/screencapture.pdf)
+![VIMQFitness](./assets/images/screencapture-127-0-0-1-5500-index-html-2023-12-07-21_21_19.png)
 
 ## Description
 
