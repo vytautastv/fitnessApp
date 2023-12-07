@@ -1,6 +1,6 @@
 # VIMQ Fitness App
 
-![VIMQFitness](link-to-screenshot.png)
+![VIMQFitness](./assets/images/screencapture.pdf)
 
 ## Description
 
@@ -17,18 +17,22 @@ VIMQ Fitness is a web application designed to assist users in their fitness jour
 ## Features
 
 1. **BMI Calculator:**
+
    - Calculate your Body Mass Index (BMI) to gauge your overall health.
    - Personalised insights based on user input.
 
 2. **Exercise Guidance:**
+
    - Access a library of exercise videos and detailed descriptions.
    - Tailored workouts for all fitness levels.
 
 3. **API Integration:**
+
    - Utilise server-side APIs to enhance user experience.
    - Real-time data for accurate BMI calculations and exercise recommendations.
 
 4. **Responsive Design:**
+
    - Enjoy a seamless experience on various devices.
    - User-friendly interface for easy navigation.
 
@@ -43,9 +47,11 @@ The VIMQ web app is deployed on GitHub Pages. Visit [VIMQFitness](https://your-u
 ## Usage
 
 1. **Calculate BMI:**
+
    - Input your height and weight to receive instant BMI results.
 
 2. **Explore Workouts:**
+
    - Browse through exercise videos and descriptions for a tailored fitness routine.
 
 3. **Track Progress:**
@@ -54,12 +60,15 @@ The VIMQ web app is deployed on GitHub Pages. Visit [VIMQFitness](https://your-u
 ## Quality Assurance
 
 - **Git Branch Workflow:**
+
   - Implemented features and bug fixes using Git branch workflow and pull requests.
 
 - **GitHub Issues:**
+
   - Created user stories and acceptance criteria in GitHub Issues for effective project management.
 
 - **GitHub Project:**
+
   - Utilised GitHub Projects to track the status of project tasks with Kanban boards.
 
 - **Clean Repository:**
@@ -67,7 +76,7 @@ The VIMQ web app is deployed on GitHub Pages. Visit [VIMQFitness](https://your-u
 
 ## Collaboration and Learning
 
-VIMQ Fitness is a collaborative project developed with agile development methodologies. It serves as a real-world application, showcasing the team's skills and providing a valuable learning experience. 
+VIMQ Fitness is a collaborative project developed with agile development methodologies. It serves as a real-world application, showcasing the team's skills and providing a valuable learning experience.
 
 ## Get Started
 
@@ -78,4 +87,3 @@ To explore VIMQ Fitness locally, follow these steps:
 3. Alternatively, view the web app on Github Pages
 
 Start your fitness journey with FitnessHub today!
-

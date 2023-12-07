@@ -62,7 +62,7 @@ $(document).ready(async function () {
     }
   }
 
-  var apiKey = "c17abc7fa9msh04c62b3db8946f3p18d5a4jsnc7b37f72632e";
+  var apiKey = "0cf590f0a0msh1ebd96456387635p136908jsn12642ff13d02";
   var bodyPartUrls = [
     "https://exercisedb.p.rapidapi.com/exercises/bodyPart/chest?limit=10",
     "https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10",
