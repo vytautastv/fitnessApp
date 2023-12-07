@@ -1,73 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-    
-
     <title>Fitness App</title>
 </head>
 <body>
-   <!--Header/Navbar-->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"   >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Fitness App</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav" >
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">BMI Calculator</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Exercises</a>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
-                        Sign Up
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
-  
-    <!-- BMI Calculator --> 
-    <section>
-        <div class="container">
-            <h2 class="header"> BMI Calculator</h2>
-            <p>Please enter your height and weight to calculate your BMI</p>
-            <div class="form-floating mb-3">
-                <input type="text" id="weightInput" class="form-control" id="floatingInput" placeholder="weight">
-                <label for="floatingInput">Weight (Kg)</label>
-            </div>
-            <div class="form-floating mb-5">
-                <input type="text" id="heightInput" class="form-control" id="floatingInput" placeholder="Height">
-                <label for="floatingPassword">Height (cm)</label>
-            </div>
-            <div class="d-grid gap-2 col-6 mx-auto mb-3">
-                <button type="button" class="btn btn-outline-light">Calculate</button>
-                <button type="button" id="clearBtn" class="btn btn-outline-light">Clear</button>
-            </div>
-            <p id="result"></p>
 
+<!--Header/Navbar-->
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">VIMQ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#BMICalculator">BMI Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Exercises">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#signupModal">
+                  Sign Up
+              </button>
+            </li>
+          </ul>
         </div>
-    </section>
-   
-    
+      </div>
+  </nav>
+</header>
+
+    <!-- Jumbotron -->
+    <div class="p-5 mb-4 bg-body-tertiary jumbotron">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">VIMQ Fitness</h1>
+        <p class="col-md-8 fs-4">Elevate your fitness journey with VIMQ Fitness the ultimate destination for personalised workouts and instant BMI insights. Unleash your potential, transform your body, and redefine what's possible in just a few taps!</p>
+      </div>
+    </div>
+
+    <!-- BMI Calculator --> 
+  <section class="d-flex justify-content-center align-items-center vh-50">
+      <div class="bmiContainer" id="BMICalculator">
+          <h2 class="header"> BMI Calculator</h2>
+          <p class="bmiText">Please enter your name, height and weight to calculate your BMI</p>
+          <div class="form-floating mb-3">
+              <input type="text" id="nameInput" class="form-control" id="floatingInput" placeholder="name">
+              <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" id="weightInput" class="form-control" id="floatingInput" placeholder="weight">
+            <label for="floatingInput">Weight (Kg)</label>
+        </div>
+          <div class="form-floating mb-5">
+              <input type="text" id="heightInput" class="form-control" id="floatingInput" placeholder="Height">
+              <label for="floatingPassword">Height (cm)</label>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto mb-3">
+              <button type="button" class="btn btn-outline-light">Calculate</button>
+              <button type="button" id="clearBtn" class="btn btn-outline-light">Clear</button>
+          </div>
+          <p id="result" class="bmiText"></p>
+      </div>
+  </section>
+
+<!-- Containers, Rows, and Cards -->
+<div class="container-fluid" id="Exercises">
+  <div class="row">
+    <h2 class="bodyParts">Chest Exercises</h2>
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card mb-5">
+       <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Second Row -->
+  <div class="row">
+    <h2 class="bodyParts">Back Exercises</h2>
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card mb-5">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Third Row -->
+  <div class="row">
+    <h2 class="bodyParts">Lower legs exercises</h2>
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card mb-5">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Fourth Row -->
+  <div class="row">
+    <h2 class="bodyParts">Abdominal Exercises</h2>
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card mb-5">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <a href="#" class="btn btn-outline-dark">More Info</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <a href="#" class="btn btn-outline-dark">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <!-- Increased size of Bootstrap logo -->
+          <svg class="bi" width="60" height="48"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2023 VIMQ Fitness, Inc</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <!-- Increased size of GitHub logo with spacing and clickable link -->
+        <li style="margin-right: 10px;"><a href="https://github.com" target="_blank"><img src="./assets/github.svg" alt="" width="40" height="40"></a></li>
+        <!-- Increased size of LinkedIn logo with spacing and clickable link -->
+        <li style="margin-right: 10px;"><a href="https://linkedin.com" target="_blank"><img src="./assets/linkedin.svg" alt="" width="40" height="40"></a></li>
+        <!-- Increased size of Twitter logo with spacing and clickable link -->
+        <li><a href="https://twitter.com" target="_blank"><img src="./assets/twitter.svg" alt="" width="40" height="40"></a></li>
+      </ul>
+    </footer>
+  </div>
+
     <!-- Modal -->
     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -92,10 +258,9 @@
             </div>
         </div>
     </div>
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-      <script src="./assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
