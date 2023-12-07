@@ -25,7 +25,7 @@
   color: white;
 }
 
-#bmiText {
+.bmiText {
   font-size: 15px;
   text-align: center;
   color: white;
@@ -52,4 +52,7 @@
   border: 2.5px solid rgb(61 88 107) !important;
   box-shadow: 5px 5px 5px rgb(175, 175, 175);
 }
-
+.text-muted {
+  color: black;
+  font-weight: bold;
+}
