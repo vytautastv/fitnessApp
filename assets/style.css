@@ -52,15 +52,6 @@
   border: 2.5px solid rgb(61 88 107) !important;
   box-shadow: 5px 5px 5px rgb(175, 175, 175);
 }
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55acee;
-  color: white;
-}
-
 .text-muted {
   color: black;
   font-weight: bold;
