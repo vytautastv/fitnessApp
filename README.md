@@ -42,7 +42,7 @@ VIMQ Fitness is a web application designed to assist users in their fitness jour
 
 ## Deployment
 
-The VIMQ web app is deployed on GitHub Pages. Visit [VIMQFitness](https://your-username.github.io/FitnessApp) to experience it live.
+The VIMQ web app is deployed on GitHub Pages. Visit [VIMQFitness](https://vytautastv.github.io/fitnessApp/) to experience it live.
 
 ## Usage
 
@@ -86,4 +86,4 @@ To explore VIMQ Fitness locally, follow these steps:
 2. Open `index.html` in your preferred web browser.
 3. Alternatively, view the web app on Github Pages
 
-Start your fitness journey with FitnessHub today!
+Start your fitness journey with VIMQ Fitness today!
